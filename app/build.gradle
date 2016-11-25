@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+buildscript {
+  repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    jcenter()
+  }
+
+  dependencies {
+    classpath 'io.fabric.tools:gradle:1.+'
+    classpath 'io.realm:realm-gradle-plugin:2.2.0'
+  }
+}
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.0"
+  defaultConfig {
+    applicationId "srinivas.com.mpchartexample"
+    minSdkVersion 16
+    targetSdkVersion 25
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile 'com.android.support:appcompat-v7:25.0.0'
+
+  compile 'com.github.PhilJay:MPAndroidChart-Realm:v2.0.2@aar'
+  //compile 'com.android.support:appcompat-v7:24.2.1'
+  // dependency for realm-database API (http://realm.io)
+  compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="srinivas.com.mpchartexample"
+    android:versionCode="54"
+    android:versionName="3.0.1" >
+
+  <uses-sdk
+      android:minSdkVersion="16"
+      android:targetSdkVersion="24" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <application
+      android:allowBackup="true"
+      android:hardwareAccelerated="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme" >
+    <activity
+        android:name=".mpchartexample.notimportant.MainActivity"
+        android:label="@string/app_name" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".mpchartexample.LineChartActivity1"></activity> <!--  android:configChanges="keyboardHidden|orientation|screenSize"  -->
+    <activity android:name=".mpchartexample.LineChartActivity2"></activity>
+    <activity android:name=".mpchartexample.LineChartTime"></activity>
+    <activity android:name=".mpchartexample.BarChartActivity"></activity>
+    <activity android:name=".mpchartexample.HorizontalBarChartActivity"></activity>
+    <activity android:name=".mpchartexample.PieChartActivity"></activity>
+    <activity android:name=".mpchartexample.PiePolylineChartActivity"></activity>
+    <activity android:name=".mpchartexample.MultiLineChartActivity"></activity>
+    <activity android:name=".mpchartexample.BarChartActivityMultiDataset"></activity>
+    <activity android:name=".mpchartexample.DrawChartActivity"></activity>
+    <activity android:name=".mpchartexample.ScatterChartActivity"></activity>
+    <activity android:name=".mpchartexample.BubbleChartActivity"></activity>
+    <activity android:name=".mpchartexample.fragments.SimpleChartDemo"></activity>
+    <activity android:name=".mpchartexample.ListViewBarChartActivity"></activity>
+    <activity android:name=".mpchartexample.ListViewMultiChartActivity"></activity>
+    <activity android:name=".mpchartexample.StackedBarActivity"></activity>
+    <activity android:name=".mpchartexample.AnotherBarActivity"></activity>
+    <activity android:name=".mpchartexample.InvertedLineChartActivity"></activity>
+    <activity android:name=".mpchartexample.CandleStickChartActivity"></activity>
+    <activity android:name=".mpchartexample.CubicLineChartActivity"></activity>
+    <activity android:name=".mpchartexample.RadarChartActivitry"></activity>
+    <activity android:name=".mpchartexample.LineChartActivityColored"></activity>
+    <activity android:name=".mpchartexample.DynamicalAddingActivity"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityLine"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityBar"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityHorizontalBar"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityScatter"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityCandle"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityBubble"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityPie"></activity>
+    <activity android:name=".mpchartexample.realm.RealmDatabaseActivityRadar"></activity>
+    <activity android:name=".mpchartexample.realm.RealmMainActivity"></activity>
+    <activity android:name=".mpchartexample.RealtimeLineChartActivity"></activity>
+    <activity android:name=".mpchartexample.CombinedChartActivity"></activity>
+    <activity android:name=".mpchartexample.PerformanceLineChart"></activity>
+    <activity android:name=".mpchartexample.BarChartActivitySinus"></activity>
+    <activity android:name=".mpchartexample.ScrollViewActivity"></activity>
+    <activity android:name=".mpchartexample.StackedBarActivityNegative"></activity>
+    <activity android:name=".mpchartexample.realm.RealmWikiExample"></activity>
+    <activity android:name=".mpchartexample.BarChartPositiveNegative"></activity>
+    <activity android:name=".mpchartexample.FilledLineActivity"></activity>
+    <activity android:name=".mpchartexample.HalfPieChartActivity"></activity>
+  </application>
+
+</manifest>
